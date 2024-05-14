@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Biki Restaurant</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="shortcut icon" type="x-icon" href="image/restaurant.png">
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+
+            <ul class="nav-links">
+                <img src="image/restaurant.png" alt="mylogo" id="logo">
+                <div class="lii"  id="menulist">
+                <li class="item"><a href="#">Home</a></li>
+                <li class="item"><a href="#">About Us</a></li>
+                <li class="item"><a href="#service">Services</a></li>
+                <li class="item"><a href="#contact">Contact Us</a></li>
+            </div>
+                <div class="menu-icon">
+                    <i class="fa-solid fa-bars" onclick="tooglelist()"></i>
+                </div>
+            </ul>
+            
+        </nav>
+
+
+        <div class="nav_down">
+            <div class="nav_down_inner">
+                <h1 class="hprimary">Welcome to My Restaurant</h1> 
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, molestiae.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, doloremque!</p><button>Order Now</button>
+
+            </div>
+
+        </div>
+    </header>
+    <main>
+        <section id="home">
+            <h1 class="h1-summer" id="service">Services</h1>
+
+            <div id="services">
+                <div class="box">
+                    <img src="image/pexels-chanwalrus-958545.jpg" alt="">
+                    <h1>Hello World</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis consequuntur harum amet nulla
+                        delectus, molestiae reprehenderit aliquid in alias placeat.</p>
+                </div>
+                <div class="box">
+                    <img src="image/pexels-chanwalrus-958545.jpg" alt="">
+                    <h1>Hello World</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis consequuntur harum amet nulla
+                        delectus, molestiae reprehenderit aliquid in alias placeat.</p>
+                </div>
+                <div class="box">
+                    <img src="image/pexels-chanwalrus-958545.jpg" alt="">
+                    <h1>Hello World</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis consequuntur harum amet nulla
+                        delectus, molestiae reprehenderit aliquid in alias placeat.</p>
+                </div>
+            </div>
+
+            <div id="contact">
+                <h1 class="h1-summer">Contact Us</h1>
+                <div id="contact-box">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" placeholder="Enter Your Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-Mail:</label>
+                            <input type="email" id="email" placeholder="Enter Your E-mail">
+                        </div>
+                        <div class="form-group">
+                            <label for="mbl_number">Mobile No:</label>
+                            <input type="number" id="mbl_number" placeholder="Enter Your Mobile Number">
+                        </div>
+                        <div class="form-group">
+                            <label for="msg">Message:</label>
+                            <textarea name="Message" id="Message" cols="30" rows="12" placeholder="Enter Message..."></textarea>
+                        </div>
+                        <input type="button" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="foot">
+        <div class="center">
+            Copyright &copy; Biki Restaurant
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

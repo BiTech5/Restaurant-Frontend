@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-attachment: fixed, scroll;
+    background-repeat: no-repeat;
+
+}
+
+nav {
+    background-color: rgb(34 40 41 / 96%);
+    position: fixed;
+    width: 100%;
+    padding: 10px 0;
+    top: 0;
+    z-index: 1000;
+}
+
+#logo {
+    width: 100px;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    line-height: 90px;
+    text-transform: uppercase;
+
+}
+
+.nav-links li {
+    margin: 0 50px;
+}
+
+.nav-links li:last-child {
+    margin-right: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.h1-summer {
+    text-align: center;
+    padding-top: 12px;
+    font-size: 2rem;
+}
+
+.lii {
+    display: flex;
+}
+
+.nav-links li a:hover {
+    background-color: aliceblue;
+    color: black;
+}
+
+.menu-icon {
+    display: none;
+
+}
+
+.menu-icon i {
+    font-size: 2rem;
+    color: white;
+}
+#menulist{
+    transition: 0.5s all;
+}
+@media(max-width:950px) {
+
+    nav .lii {
+        position: absolute;
+        top: 120px;
+        right: 0;
+        left: 0;
+        /* text-align: center; */
+        float: right;
+        flex-direction: column;
+        gap: 0;
+        height: 100vh;
+        background-color: rgb(37 40 40 / 84%);
+        overflow: hidden;
+        
+    }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        right: 10px;
+    }
+
+    .lii {
+        padding: 0;
+    }
+
+}
+
+/* centering the div */
+.nav_down {
+    height: 80vh;
+    margin: 14px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+}
+
+.nav_down_inner {
+    text-align: center;
+}
+
+.nav_down_inner button {
+    padding:15px 24px;
+    background-color: #722e2e42;
+    color: white;
+    margin: 17px;
+    border-radius: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav_down_inner button:hover {
+    background-color: rgba(111, 87, 87, 0.487);
+    color: white;
+    font-weight: bold;
+}
+
+main {
+    background-color: aliceblue;
+    /* height: 100vh; */
+    width: 100%;
+}
+
+#services h1 {
+    text-align: center;
+}
+
+#services {
+    display: flex;
+    /* justify-content: center; */
+}
+
+.box {
+    width: 400px;
+    margin-top: 50px;
+    margin-right: 20px;
+    background-color: rgb(225 220 220);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.box p {
+    font-size: 1rem;
+}
+
+.box img {
+    height: 160px;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (max-width:1100px) {
+    #services {
+        display: inline;
+
+    }
+
+    .box {
+        display: inline-block;
+        width: 340px;
+    }
+}
+
+#contact {
+    position: relative;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+    
+}
+#contact-box input[type=button]{
+    display: block;
+    background-color: rgba(101, 67, 67, 0.415);
+    color: black;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+}
+#contact-box input[type=button]:hover{
+    background-color: rgba(44, 30, 30, 0.356);
+}
+#foot {
+    /* height: 200px; */
+    color: white;
+    background-color: rgb(34, 32, 32);
+    padding: 13px 18px;
+}
+
+footer .center {
+    text-align: center;
+}
