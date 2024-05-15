@@ -172,16 +172,37 @@ main {
     display: block;
     margin: 0 auto;
 }
-
+.box_up{
+    display: flex;
+    padding: 15px;
+    /* margin: auto; */
+}
+.box_up img{
+    margin-right: 12px;
+    /* height:400px; */
+    width: 20rem;
+}
+.box_ip p{
+    font-size: 1rem;
+}
+@media(max-width:730px){
+    .box_up{
+        display: block;
+    }
+    .box_up img{
+        display: block;
+        margin:0 auto;
+    }
+}
 @media (max-width:1100px) {
     #services {
         display: inline;
 
     }
-
+    
     .box {
         display: inline-block;
-        width: 340px;
+        width: 320px;
     }
 }
 
